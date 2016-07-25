@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560F55EE1D2FAB1D00A8AB15 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F55ED1D2FAB1D00A8AB15 /* XMLDictionary.m */; };
 		568BE10E1D2F4CCF0003DB3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568BE10D1D2F4CCF0003DB3E /* main.m */; };
 		568BE1111D2F4CCF0003DB3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568BE1101D2F4CCF0003DB3E /* AppDelegate.m */; };
 		568BE1141D2F4CCF0003DB3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568BE1131D2F4CCF0003DB3E /* ViewController.m */; };
 		568BE1171D2F4CCF0003DB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568BE1151D2F4CCF0003DB3E /* Main.storyboard */; };
 		568BE1191D2F4CCF0003DB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568BE1181D2F4CCF0003DB3E /* Assets.xcassets */; };
 		568BE11C1D2F4CCF0003DB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568BE11A1D2F4CCF0003DB3E /* LaunchScreen.storyboard */; };
+		568BE1251D2F4EA40003DB3E /* JFAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 568BE1241D2F4EA40003DB3E /* JFAreaPicker.m */; };
+		568BE1281D2F4F3C0003DB3E /* city.xml in Resources */ = {isa = PBXBuildFile; fileRef = 568BE1261D2F4F3C0003DB3E /* city.xml */; };
+		568BE1291D2F4F3C0003DB3E /* country.xml in Resources */ = {isa = PBXBuildFile; fileRef = 568BE1271D2F4F3C0003DB3E /* country.xml */; };
+		568BE12B1D2F4F4D0003DB3E /* province.xml in Resources */ = {isa = PBXBuildFile; fileRef = 568BE12A1D2F4F4D0003DB3E /* province.xml */; };
+		568BE12E1D2F56B90003DB3E /* UIColor+SetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 568BE12D1D2F56B90003DB3E /* UIColor+SetColor.m */; };
+		56B85F801D33793500B5CF95 /* JFDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B85F7F1D33793500B5CF95 /* JFDatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		560F55EC1D2FAB1D00A8AB15 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		560F55ED1D2FAB1D00A8AB15 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		568BE1091D2F4CCF0003DB3E /* JFAreaPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFAreaPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568BE10D1D2F4CCF0003DB3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		568BE10F1D2F4CCF0003DB3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +35,15 @@
 		568BE1181D2F4CCF0003DB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		568BE11B1D2F4CCF0003DB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		568BE11D1D2F4CCF0003DB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568BE1231D2F4EA40003DB3E /* JFAreaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAreaPicker.h; sourceTree = "<group>"; };
+		568BE1241D2F4EA40003DB3E /* JFAreaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAreaPicker.m; sourceTree = "<group>"; };
+		568BE1261D2F4F3C0003DB3E /* city.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = city.xml; sourceTree = "<group>"; };
+		568BE1271D2F4F3C0003DB3E /* country.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = country.xml; sourceTree = "<group>"; };
+		568BE12A1D2F4F4D0003DB3E /* province.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = province.xml; sourceTree = "<group>"; };
+		568BE12C1D2F56B90003DB3E /* UIColor+SetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SetColor.h"; sourceTree = "<group>"; };
+		568BE12D1D2F56B90003DB3E /* UIColor+SetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SetColor.m"; sourceTree = "<group>"; };
+		56B85F7E1D33793500B5CF95 /* JFDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDatePicker.h; sourceTree = "<group>"; };
+		56B85F7F1D33793500B5CF95 /* JFDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDatePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,8 @@
 				568BE1181D2F4CCF0003DB3E /* Assets.xcassets */,
 				568BE11A1D2F4CCF0003DB3E /* LaunchScreen.storyboard */,
 				568BE11D1D2F4CCF0003DB3E /* Info.plist */,
+				56BB43DC1D34CC4400BA556D /* DatePicker(日期选择) */,
+				56BB43DB1D34CC3400BA556D /* AreaPicker(地区选择) */,
 				568BE10C1D2F4CCF0003DB3E /* Supporting Files */,
 			);
 			path = JFAreaPicker;
@@ -74,9 +94,34 @@
 		568BE10C1D2F4CCF0003DB3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				568BE12C1D2F56B90003DB3E /* UIColor+SetColor.h */,
+				568BE12D1D2F56B90003DB3E /* UIColor+SetColor.m */,
+				560F55EC1D2FAB1D00A8AB15 /* XMLDictionary.h */,
+				560F55ED1D2FAB1D00A8AB15 /* XMLDictionary.m */,
 				568BE10D1D2F4CCF0003DB3E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56BB43DB1D34CC3400BA556D /* AreaPicker(地区选择) */ = {
+			isa = PBXGroup;
+			children = (
+				568BE1231D2F4EA40003DB3E /* JFAreaPicker.h */,
+				568BE1241D2F4EA40003DB3E /* JFAreaPicker.m */,
+				568BE1261D2F4F3C0003DB3E /* city.xml */,
+				568BE1271D2F4F3C0003DB3E /* country.xml */,
+				568BE12A1D2F4F4D0003DB3E /* province.xml */,
+			);
+			name = "AreaPicker(地区选择)";
+			sourceTree = "<group>";
+		};
+		56BB43DC1D34CC4400BA556D /* DatePicker(日期选择) */ = {
+			isa = PBXGroup;
+			children = (
+				56B85F7E1D33793500B5CF95 /* JFDatePicker.h */,
+				56B85F7F1D33793500B5CF95 /* JFDatePicker.m */,
+			);
+			name = "DatePicker(日期选择)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568BE1281D2F4F3C0003DB3E /* city.xml in Resources */,
 				568BE11C1D2F4CCF0003DB3E /* LaunchScreen.storyboard in Resources */,
+				568BE1291D2F4F3C0003DB3E /* country.xml in Resources */,
 				568BE1191D2F4CCF0003DB3E /* Assets.xcassets in Resources */,
 				568BE1171D2F4CCF0003DB3E /* Main.storyboard in Resources */,
+				568BE12B1D2F4F4D0003DB3E /* province.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568BE12E1D2F56B90003DB3E /* UIColor+SetColor.m in Sources */,
+				568BE1251D2F4EA40003DB3E /* JFAreaPicker.m in Sources */,
 				568BE1141D2F4CCF0003DB3E /* ViewController.m in Sources */,
 				568BE1111D2F4CCF0003DB3E /* AppDelegate.m in Sources */,
 				568BE10E1D2F4CCF0003DB3E /* main.m in Sources */,
+				56B85F801D33793500B5CF95 /* JFDatePicker.m in Sources */,
+				560F55EE1D2FAB1D00A8AB15 /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +354,7 @@
 				568BE1221D2F4CCF0003DB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
