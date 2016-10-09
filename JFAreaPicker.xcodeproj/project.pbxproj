@@ -155,6 +155,7 @@
 				TargetAttributes = {
 					568BE1081D2F4CCF0003DB3E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = K8EF437627;
 					};
 				};
 			};
@@ -317,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8EF437627;
 				INFOPLIST_FILE = JFAreaPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bobcare.JFAreaPicker;
@@ -328,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8EF437627;
 				INFOPLIST_FILE = JFAreaPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bobcare.JFAreaPicker;

@@ -77,7 +77,7 @@
     //将图层显示与window之上
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
-    if (self.contentMode == JFAreaPickerContentModeBottom)
+    if (self.pickerContentMode == JFAreaPickerContentModeBottom)
     {
         self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight + kContentViewHeight / 2);
         self.alpha = 0.0;
@@ -87,8 +87,8 @@
             self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight - kContentViewHeight / 2);
             self.alpha = 1.0;
             [self setBackgroundColor:[UIColor colorWithWhite:0.3 alpha:0.4]];
-        } completion:^(BOOL finished) {
-        }];
+            
+        } completion:nil];
     }
     else
     {
@@ -99,15 +99,15 @@
             self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
             self.alpha = 1.0;
             [self setBackgroundColor:[UIColor colorWithWhite:0.3 alpha:0.4]];
-        } completion:^(BOOL finished) {
-        }];
+            
+        } completion:nil];
     }
     
 }
 
 - (void)hide
 {
-    if (self.contentMode == JFAreaPickerContentModeBottom)
+    if (self.pickerContentMode == JFAreaPickerContentModeBottom)
     {
         self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight - kContentViewHeight / 2);
         self.alpha = 1.0;
@@ -118,8 +118,8 @@
             self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight + kContentViewHeight / 2);
             self.alpha = 0.0;
             [self setBackgroundColor:[UIColor clearColor]];
-        } completion:^(BOOL finished) {
-        }];
+            
+        } completion:nil];
     }
     else
     {
@@ -132,9 +132,11 @@
             self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight + kContentViewHeight / 2);
             self.alpha = 0.0;
             [self setBackgroundColor:[UIColor clearColor]];
+            
         } completion:^(BOOL finished) {
             
             [self removeFromSuperview];
+            
         }];
     }
 }
@@ -325,19 +327,22 @@
     {
         [_currentCoutryArray removeAllObjects];
         
-        //取出城市code，来遍历属于该城市的乡镇
-        NSString *cityCode = [[_currentCityArray objectAtIndex:row] objectForKey:@"code"];
-        
-        for (NSDictionary *tempDic in _countryArray)
+        if (_currentCityArray.count > 0 && row < _currentCityArray.count)
         {
-            if ([cityCode isEqualToString:[tempDic objectForKey:@"p_code"]])
+            //取出城市code，来遍历属于该城市的乡镇
+            NSString *cityCode = [[_currentCityArray objectAtIndex:row] objectForKey:@"code"];
+            
+            for (NSDictionary *tempDic in _countryArray)
             {
-                [_currentCoutryArray addObject:tempDic];
+                if ([cityCode isEqualToString:[tempDic objectForKey:@"p_code"]])
+                {
+                    [_currentCoutryArray addObject:tempDic];
+                }
             }
+            
+            [pickerView reloadComponent:2];
+            [pickerView selectRow:0 inComponent:2 animated:YES];
         }
-        
-        [pickerView reloadComponent:2];
-        [pickerView selectRow:0 inComponent:2 animated:YES];
     }
     
     [self reloadData];

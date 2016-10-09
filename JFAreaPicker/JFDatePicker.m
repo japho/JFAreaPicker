@@ -59,7 +59,7 @@
 {
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
-    if (self.contentMode == JFDatePickerContentModeBottom)
+    if (self.pickerContentMode == JFDatePickerContentModeBottom)
     {
         self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight + kContentViewHeight / 2);
         self.alpha = 0.0;
@@ -89,7 +89,7 @@
 
 - (void)hide
 {
-    if (self.contentMode == JFDatePickerContentModeBottom)
+    if (self.pickerContentMode == JFDatePickerContentModeBottom)
     {
         self.contentView.center = CGPointMake(kScreenWidth / 2, kScreenHeight - kContentViewHeight / 2);
         self.alpha = 1.0;

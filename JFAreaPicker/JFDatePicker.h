@@ -31,8 +31,8 @@ typedef enum : NSUInteger {
 @interface JFDatePicker : UIView
 
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) JFDatePickerContentMode contentMode;
-@property (nonatomic, assign) JFDatePickerMode pickerMode;
+@property (nonatomic, assign) JFDatePickerContentMode pickerContentMode;
+@property (nonatomic, assign) JFDatePickerMode pickerMode;      //datePickerMode
 @property (nonatomic, weak) id<JFDatePickerDelegate> delegate;
 
 - (void)show;

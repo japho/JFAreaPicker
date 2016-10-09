@@ -35,7 +35,7 @@ typedef enum : NSUInteger {
 @interface JFAreaPicker : UIView
 
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) JFAreaPickerContentMode contentMode;
+@property (nonatomic, assign) JFAreaPickerContentMode pickerContentMode;
 @property (nonatomic, weak) id<JFAreaPickerDelegate> delegate;
 
 - (void)show;

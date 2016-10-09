@@ -37,7 +37,7 @@
 - (IBAction)show:(id)sender
 {
     JFAreaPicker *areaPicker = [[JFAreaPicker alloc] init];
-    areaPicker.contentMode = JFAreaPickerContentModeCenter;
+    areaPicker.pickerContentMode = JFAreaPickerContentModeCenter;
     areaPicker.title = @"请选择所在地区";
     areaPicker.delegate = self;
     [areaPicker show];
@@ -46,7 +46,7 @@
 - (IBAction)datePicker:(id)sender
 {
     JFDatePicker *datePicker = [[JFDatePicker alloc] init];
-    datePicker.contentMode = JFDatePickerContentModeCenter;
+    datePicker.pickerContentMode = JFDatePickerContentModeCenter;
     datePicker.pickerMode = JFDatePickerModeDate;
     datePicker.title = @"请选择生日";
     datePicker.delegate = self;
